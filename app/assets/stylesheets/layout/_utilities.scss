@@ -23,3 +23,32 @@
 .bg-dark-blue {
   background: #3b5998;
 }
+
+// flex
+
+.flex {
+  display: flex;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-item {
+  flex: 0 1 auto;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+//font color
+
+.font-green {
+  color:#1ed760;
+}

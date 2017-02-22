@@ -1,17 +1,15 @@
 /* Main class */
-.navbar-wagon {
+.navbar-identify {
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
-  background: white;
+  background: rgba(0,0,0,.6);
   transition: all 0.3s ease;
-  display: flex;
-  height: 70px;
-  padding: 0px 30px;
-  align-items: center;
-  justify-content: space-between;
+  height: 80px;
+  position:absolute;
+  width:100%;
 }
 
 /* Optional class to fix the navbar on top */
-.navbar-wagon-fixed {
+.navbar-identify-fixed {
   position: fixed;
   left: 0px;
   top: 0px;
@@ -20,60 +18,80 @@
 }
 
 /* Navbar logo */
-.navbar-wagon-brand img {
-  width: 50px;
+.navbar-identify-brand img {
+  width: 145px;
+  float: left;
+  height: 80px;
 }
 
 /* Navbar right section (with form, links, button) */
-.navbar-wagon-right {
+.navbar-identify-right {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  float: right;
 }
 
 /* Navbar item */
-.navbar-wagon-item {
-  flex: 0 1 auto;
+.navbar-identify-item {
+  float: right;
+  line-height: 80px;
   cursor: pointer;
   padding: 0 20px;
 }
 
 /* Navbar standard link */
-.navbar-wagon-link {
-  color: #616668;
-  font-size: 14px;
+.navbar-identify-link {
+  color: white;
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 500;
 }
-.navbar-wagon-link:hover {
-  color: #da552f;
+
+.navbar-identify-link-cta {
+  color: #c1c3c6;
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 500;
+}
+
+.navbar-identify-link-cta:hover, .navbar-identify-link-cta:active, .navbar-identify-link-cta:focus {
+  color: #1ed760;
+  text-decoration: none;
+}
+
+.navbar-identify-link:hover, .navbar-identify-link:active, .navbar-identify-link:focus {
+  color: #1ed760;
   text-decoration: none;
 }
 
 /* Navbar right button */
-.navbar-wagon-button {
+.navbar-identify-button {
   margin-left: 10px;
   padding: 0 20px;
   border-radius: 20em;
   line-height: 40px;
-  background-color: #D23333;
+  background-color: #2ebd59;
   color: white;
-  font-size: 14px;
-  border: 2px solid #D23333;
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 500;
+  border: 2px solid #2ebd59;
 }
-.navbar-wagon-button:hover {
+.navbar-identify-button:hover {
   color: white;
-  background: #D23333;
-  border-color: #ac2626;
+  background: #1ed760;
+  border: 2px solid #1ed760;
 }
 
 /* Navbar search form */
-.navbar-wagon-search {
+.navbar-identify-search {
   flex: 0 1 300px;
   display: flex;
   justify-content: flex-end;
   padding: 0 10px;
   position: relative;
 }
-.navbar-wagon-search-btn {
+.navbar-identify-search-btn {
   line-height: 40px;
   color: #E6E6E6;
   border: none;
@@ -83,7 +101,7 @@
   top: -2px;
   z-index: 1;
 }
-.navbar-wagon-search-input {
+.navbar-identify-search-input {
   flex: 0 1 300px;
   transition: all 0.15s ease;
   line-height: 40px;
@@ -95,17 +113,17 @@
   font-size: 14px;
   outline: none;
 }
-.navbar-wagon-search-input:focus  {
+.navbar-identify-search-input:focus  {
   border: 1px solid #CCCCCC;
 }
 
 /* Navbar dropdown menu */
-.navbar-wagon-dropdown-menu {
+.navbar-identify-dropdown-menu {
   margin-top: 15px;
   box-shadow: 1px 1px 4px #E6E6E6;
   border-color: #E6E6E6;
 }
-.navbar-wagon-dropdown-menu li > a {
+.navbar-identify-dropdown-menu li > a {
   transition: color 0.3s ease;
   font-weight: lighter !important;
   color: #999999 !important;
@@ -113,11 +131,11 @@
   line-height: 22px !important;
   padding: 10px 20px;
 }
-.navbar-wagon-dropdown-menu li > a:hover {
+.navbar-identify-dropdown-menu li > a:hover {
   background: transparent !important;
   color: black !important;
 }
-.navbar-wagon-dropdown-menu:before {
+.navbar-identify-dropdown-menu:before {
   content: ' ';
   height: 10px;
   width: 10px;
@@ -129,3 +147,22 @@
   border-left: 1px solid #E6E6E6;
   border-top: 1px solid #E6E6E6;
 }
+
+/* Navbar divider */
+
+.divider {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  height: 16px;
+  width: 1px;
+  margin-left: 17px;
+  margin-right: 17px;
+  background-color:#c1c3c6;
+}
+
+.fa-bars {
+  color:white
+}
+
+
+

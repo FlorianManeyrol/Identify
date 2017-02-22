@@ -2,3 +2,81 @@
  * CSS code specific to home page
  * (margin/padding adjustments)
  * ------------------------------------- */
+
+ .jumbo-hero {
+  min-height: 80vh;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(painter.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  &-item {
+    h1 {
+      color:white;
+      font-weight: 700;
+      text-align: center;
+      font-size:50px;
+      text-shadow:2px 2px 5px rgba(0,0,0,.6);
+    }
+    p {
+      text-align: center;
+      font-weight:100;
+      color:white;
+      font-size:30px;
+      text-shadow:1px 1px 5px rgba(0,0,0,.6);
+    }
+    span {
+      font-weight: 700;
+    }
+  }
+}
+
+.jumbo-intro {
+  padding:40px 0px;
+  text-align: center;
+}
+
+.laptop {
+  background-image: url(laptop.svg);
+  width: 150px;
+  height: 120px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+}
+
+
+
+.jumbo-price {
+  &-intro {
+    text-align:center;
+  }
+  &-item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 25px 80px;
+    &-title {
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 30px;
+      font-family: Roboto;
+      font-weight: 400;
+    }
+    &-price {
+      text-align: center;
+      font-size: 50px;
+      font-weight: 500;
+      font-family: Roboto;
+      color: #1ED760;
+    }
+  }
+}
+
+.jumbo-eddy {
+  min-height: 80vh;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(eddy.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
