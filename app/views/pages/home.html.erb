@@ -1,14 +1,87 @@
 <div class="jumbo-hero flex-container">
-  <div class="jumbo-hero-item flex-item">
-    <h1>Création d'identité visuelle pour les TPE</h1>
-    <p>Stratégie Marketing <span class="font-green">•</span> Supports imprimés <span class="font-green">•</span> Site internet</p>
+  <div class="jumbo-hero-item flex-item text-center">
+    <h1>Création de sites web pour les TPE</h1>
+    <p>L'agence web à taille humaine. </p>
+    <%= link_to 'En savoir plus', "#", class: "btn identify-button" %>
   </div>
 </div>
 
 <div class="jumbo-intro">
-  <h2>Notre crédo : les Très Petites Entreprises</h2>
-  <p>Notre objectif est d'acompagner les TPE dans l'élaboration de leur strategie marketing et la création de leur identité visuelle.</p>
+  <div class="container">
+    <div class="row">
+      <div class="jumbo-intro-title">
+        <h2>Notre crédo, les Très Petites Entreprises.</h2>
+      </div>
+      <div class="jumbo-intro-subtitle">
+        <p>Notre objectif est <strong>d'acompagner les TPE</strong> dans l'élaboration de leur <span>strategie digitale</span>, dans la conception <br>de leur <span>identité visuelle</span>, et dans le développement de leur <span>présence sur le web.</span></p>
+      </div>
+    </div>
+  </div>
+
 </div>
+
+<div class="jumbo-presta">
+  <div class="container">
+    <div class="row row-eq-height">
+      <div class="col-md-4">
+        <div class="jumbo-presta-item">
+          <div class="jumbo-presta-item-icon" id="laptop"></div>
+
+          <div class="jumbo-presta-item-title">
+            Création de sites web vitrine, dynamique et <br>e-commerce.
+          </div>
+          <div class="jumbo-presta-item-content">
+            Nous concevons aussi bien des sites vitrines dit 'statiques' que des sites dynamique et interactif.
+          </div>
+          <div class="jumbo-presta-item-btn">
+            <%= link_to "En savoir plus", "#"  %>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="jumbo-presta-item">
+          <div class="jumbo-presta-item-icon" id="search"></div>
+          <div class="jumbo-presta-item-title">
+            Référencement naturel et payant sur les moteurs de recherche.
+          </div>
+          <div class="jumbo-presta-item-content">
+            Nous optimisions nos sites web pour qu'il apparaissent sur les moteurs de recherches.
+          </div>
+          <div class="jumbo-presta-item-btn">
+            <%= link_to "En savoir plus", "#"  %>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="jumbo-presta-item">
+          <div class="jumbo-presta-item-icon" id="logo"></div>
+
+          <div class="jumbo-presta-item-title">
+            Conception de chartes graphique et supports de communication.
+          </div>
+          <div class="jumbo-presta-item-content">
+            Nous proposons la création d'une charte graphique avec ses déclinaisons sur tout type de supports de communication : cartes de visite, flyers etc.
+          </div>
+          <div class="jumbo-presta-item-btn">
+            <%= link_to "En savoir plus", "#"  %>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- <div class="jumbo-divider">
+  <div class="container">
+    <div class="row">
+      <div class="section-divider width-75 margin-center"></div>
+    </div>
+  </div>
+</div> -->
+
 
 <div class="jumbo-features">
 
@@ -34,7 +107,7 @@
        </div>
        <div class="jumbo-features-content">
         Nous avons préparé des dixiènes de fiches conseils qui sont mis à votre disposition afin de vous facilitez la tâche.
-        Vous allez devenir des vrais experts !
+        Vous allez devenir de vrais experts !
       </div>
 
     </div>
@@ -143,41 +216,16 @@
 
 </div>
 
-<%= render 'shared/contact_form' %>
-
-
-<div class="jumbo-contact">
+<div class="contact-form" id="contact-form">
   <div class="container">
     <div class="row">
       <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-        <div class="contact-background">
-          <div class="section-title text-center">
-
-          </div>
-          <form action="//formspree.io/florianmaneyrol@gmail.com"
-          method="POST">
-          <input type="text" name="_gotcha" style="display:none" />
-          <div class="form-group">
-            <label for="Nom">NOM</label>
-            <input type="text" class="form-control" name="name" id="Nom">
-          </div>
-          <div class="form-group">
-            <label for="Email">EMAIL</label>
-            <input type="email" class="form-control" name="_replyto" type="email" id="Email">
-          </div>
-          <div class="form-group">
-            <label for="Message">MESSAGE</label>
-            <textarea name="message" class="form-control" id="Message" rows="8"></textarea>
-          </div>
-          <div class="form-group text-center">
-            <input type="submit" class="btn btn-ct" value="Envoyer" >
-          </div>
-        </form>
+        <h3 class="contact-form-title">Nous contacter.</h3>
+        <p class="contact-form-subtitle">N'hésitez pas à utiliser notre formulaire de contact ci-dessous pour toute demande d'informations. Nous vous recontacterons dans les meilleurs délais.</p>
+        <%= render 'shared/contact_form' %>
       </div>
     </div>
   </div>
-</div>
-
 </div>
 
 

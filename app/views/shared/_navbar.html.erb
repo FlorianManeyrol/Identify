@@ -13,6 +13,9 @@
 
     <%= link_to t(".blog", default: "Blog"), "#", class: "navbar-identify-item navbar-identify-link" %>
 
+    <%= link_to t(".contact", default: "Contact"), "#contact-form", class: "navbar-identify-item navbar-identify-link" %>
+
+
     <!-- Different navigation if login or not -->
     <span role="separator" class="divider"></span>
     <% if user_signed_in? %>
@@ -52,7 +55,7 @@
     <% else %>
 
       <!-- Login text link -->
-      <%= link_to t(".sign_in", default: "Se connecter"), new_user_session_path, class: "navbar-identify-item navbar-identify-link-cta" %>
+      <%= link_to t(".sign_in", default: "Accès client"), new_user_session_path, class: "navbar-identify-item navbar-identify-link-cta" %>
 
     <% end %>
 
@@ -60,7 +63,6 @@
 
 
     <!-- Button (call-to-action) -->
-    <%= link_to t(".top_call_to_action", default: "S'inscrire"), "#", class: "navbar-identify-item navbar-identify-button btn" %>
   </div>
 
   <!-- Dropdown list appearing on mobile only -->
